@@ -1,0 +1,224 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+.main-header {
+    margin: 2rem 0;
+}
+
+.btn-first {
+    margin-right: 0.5rem;
+}
+
+.courier-img {
+    margin-top: 2rem;
+    max-width: 24rem;
+}
+
+/* Navbar underline on hover transtion*/
+.navbar .navbar-nav .nav-link {
+    color: var(--primary);
+    font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav .nav-item {
+    position: relative;
+}
+
+.navbar .navbar-nav .nav-item::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: var(--primary);
+    width: 0%;
+    content: "";
+    height: 2px;
+    transition: all 250ms;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for navbar */
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for footer */
+    color: #fff; /* Set text color to white for better contrast */
+    padding: 20px 0;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+    width: 100%;
+}
+/* ------------------------------------------------ */
+
+.btns-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 24rem;
+    margin: 0 auto;
+
+    row-gap: 1.2rem;
+    column-gap: 1rem;
+}
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(231,255,254,1) 100%);
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+.social-icons {
+    text-align: center;
+}
+
+    .social-icons a {
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .social-icons img {
+        width: 40px; /* Adjust size as needed */
+        height: 40px; /* Adjust size as needed */
+    }
+/* Set a max-height for the carousel images */
+.carousel-item img {
+    max-height: 400px; /* Adjust the height as needed */
+}
+
+/* Style the carousel caption */
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 20px; /* Padding around the caption */
+    color: #fff; /* Text color */
+}
+
+    /* Style the carousel caption headings */
+    .carousel-caption h1 {
+        font-size: 2.5rem; /* Heading font size */
+    }
+
+    .carousel-caption p {
+        font-size: 1.25rem; /* Paragraph font size */
+    }
+
+/* Style the carousel control buttons */
+.carousel-control-prev, .carousel-control-next {
+    width: auto; /* Set width to auto for better responsiveness */
+}
+
+/* Style the carousel indicators */
+.carousel-indicators {
+    bottom: 10px; /* Position the indicators closer to the bottom */
+}
+
+    .carousel-indicators button {
+        width: 10px; /* Adjust the width of the indicators */
+        height: 10px; /* Adjust the height of the indicators */
+        border-radius: 50%; /* Make the indicators circular */
+        margin: 0 5px; /* Add margin between indicators */
+        background-color: #fff; /* Indicator color */
+    }
+
+    .carousel-indicators .active {
+        background-color: #007bff; /* Active indicator color */
+    }
+/* Style for the review section */
+.container {
+    padding: 0px; /* Add some padding to the container */
+}
+
+h2 {
+    text-align: center; /* Center-align the heading */
+}
+
+.row {
+    margin-top: 20px; /* Add some margin to the top of the row */
+}
+
+.col-lg-4 {
+    margin-bottom: 30px; /* Add some margin to the bottom of each column */
+}
+
+/* Style for the review images */
+.img-fluid {
+    max-width: 100%; /* Make the images responsive within their parent container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents images from being displayed inline */
+    margin: 0 auto; /* Center-align the images */
+}
+
+/* Style for the review text */
+h2.fw-normal {
+    margin-top: 20px; /* Add some margin above the reviewer's name */
+}
+
+p {
+    text-align: justify; /* Justify-align the review text */
+}

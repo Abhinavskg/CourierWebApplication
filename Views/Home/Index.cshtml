@@ -1,0 +1,192 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var isAuth = User.Identity.IsAuthenticated;
+}
+<head>
+    <link rel="stylesheet" href="~/css/new.css" />
+   
+</head>
+<div class="text-center">
+    <h1 class="display-4 main-header">French Courier Management System</h1>
+    <h3>Hello, @(isAuth ? User.Identity.Name : "anonymous")</h3>
+    <!-- Additional Images -->
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n6.jpg" class="img-fluid rounded" alt="Additional Image 1">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n16.jpg" class="img-fluid rounded" alt="Additional Image 2">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n13.jpg" class="img-fluid rounded" alt="Additional Image 3">
+            </div>
+            </div>
+    <div class="btns-container">
+        @if (isAuth)
+        {
+          @*   <a class="btn btn-primary" asp-area="" asp-controller="Deliveries" asp-action="Index">
+                <i class="fas fa-truck"></i> 🚚 Deliveries
+            </a>
+            <a class="btn btn-primary" asp-area="" asp-controller="Units" asp-action="Index">
+                <i class="fas fa-gem"></i>💎 Units
+            </a>
+            <a class="btn btn-primary" asp-area="" asp-controller="Customers" asp-action="Index">
+                <i class="fas fa-user"></i> 🧑‍💼Customers
+            </a>
+            <a class="btn btn-primary" asp-area="" asp-controller="Items" asp-action="Index">
+                <i class="fas fa-box"></i> 📦Items
+            </a> *@
+        }
+        else
+        {
+           @*  <a class="btn btn-primary" href="/Identity/Account/Login">
+                <i class="fas fa-sign-in-alt"></i> 🔑Login
+            </a>
+            <a class="btn btn-secondary" href="/Identity/Account/Register">
+                <i class="fas fa-user-plus"></i>  📝Register
+            </a> *@
+            
+	@* <div class="image-container">
+		<img class="courier-img" src="courier.svg" alt="Courier"/>
+	</div> *@
+        }
+    </div>
+</div>
+
+	
+
+
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Efficient Shipment Tracking. <span class="text-muted">Stay updated on every delivery.</span></h2>
+                <p class="lead">Track all your shipments in real-time. Monitor the progress of each delivery and ensure timely arrivals.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="~/img/n3.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Shipment Tracking" width="600" height="700">
+            </div>
+        </div>
+
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading fw-normal lh-1">Efficient Route Optimization. <span class="text-muted">Minimize delivery times.</span></h2>
+                <p class="lead">Optimize delivery routes to minimize time and fuel costs. Our route optimization feature ensures efficient delivery schedules.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="~/img/n2.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Route Optimization" width="500" height="500">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Customer Management Made Easy. <span class="text-muted">Satisfy your customers.</span></h2>
+                <p class="lead">Effortlessly manage your customers' information, addresses, and preferences with our customer management tools.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="~/img/n10.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="Customer Management" width="500" height="500">
+            </div>
+        </div>
+
+
+
+
+
+    <!-- Additional Images -->
+    <hr class="featurette-divider">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n4.jpg" class="img-fluid rounded" alt="Additional Image 1">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n5.jpg" class="img-fluid rounded" alt="Additional Image 2">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n7.jpg" class="img-fluid rounded" alt="Additional Image 3">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n8.jpg" class="img-fluid rounded" alt="Additional Image 3">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/n9.jpg" class="img-fluid rounded" alt="Additional Image 3">
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="image-container">
+                <img src="~/img/m11.jpg" class="img-fluid rounded" alt="Additional Image 3">
+            </div>
+        </div>
+
+
+
+        <hr class="featurette-divider">
+
+    </div>
+
+           
+            <div class="container">
+                <h2>Reviews for French Courier Management System</h2>
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col-lg-4">
+                        <img src="~/img/p1.jpg" class="bd-placeholder-img img-fluid  rounded-circle" alt="Customer 1" width="120" height="120">
+                        <h2 class="fw-normal">John Doe</h2>
+                        <p>"Great courier management system! It has helped streamline our logistics operations and improved delivery efficiency. Highly recommend it."</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="~/img/p2.png" class=" img-fluid rounded-circle" alt="Customer 2" width="120" height="120">
+                        <h2 class="fw-normal">Jane Smith</h2>
+                        <p>"We've been using this courier service for our business for over a year now, and we're extremely satisfied with the reliability and professionalism. Keep up the good work!"</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="~/img/p3.png" class=" img-fluid rounded-circle" alt="Customer 3" width="120" height="120">
+                        <h2 class="fw-normal">Rehana</h2>
+                        <p>"Impressive logistic service! They always deliver on time, and their tracking system is very user-friendly. Will continue to use their services."</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="~/img/p4.jpg" class="img-fluid rounded-circle" alt="Customer 4" width="120" height="120">
+                        <h2 class="fw-normal">Emily Brown</h2>
+                        <p>"Excellent courier management platform! Their customer support is top-notch, and we've never encountered any issues with our deliveries."</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="~/img/p5.jpg" class="img-fluid rounded-circle" alt="Customer 5" width="120" height="120">
+                        <h2 class="fw-normal">Lara Wilson</h2>
+                        <p>"Efficient logistic services! They provide accurate tracking information, and their delivery personnel are always professional and courteous."</p>
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-4">
+                        <img src="~/img/p6.png" class="img-fluid rounded-circle" alt="Customer 6" width="120" height="120">
+                        <h2 class="fw-normal">Marry Jackson</h2>
+                        <p>"Smooth courier management experience! Their platform is easy to use, and we've seen a significant improvement in our delivery processes since we started using their services."</p>
+                    </div><!-- /.col-lg-4 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+
+
+</div>
+</div>

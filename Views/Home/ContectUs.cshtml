@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <div class="contact-info">
+                <h3>Our Location</h3>
+                <p>15/166 Gandhi Nagar Poni Road, Shuklaganj, India</p>
+                <h3>Contact Information</h3>
+                <p>Email: abhinavskg@gmail.com</p>
+                <p>Phone: 9305429287</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .contact-info h3 {
+        margin-top: 20px;
+    }
+
+    .contact-info p {
+        margin-bottom: 10px;
+    }
+</style>
+<!-- Your HTML content -->
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // When the submit button is clicked
+        $('form').submit(function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Check if any of the form fields are empty
+            var fullName = $('#fullName').val().trim();
+            var email = $('#email').val().trim();
+            var message = $('#message').val().trim();
+
+            if (!fullName || !email || !message) {
+                // If any field is empty, show an alert message
+                alert('Please fill in all the fields!');
+            } else {
+                // If all fields are filled, show a success message
+                alert('Data submitted successfully!');
+
+                // Reset the form
+                $(this)[0].reset();
+            }
+        });
+    });
+</script>

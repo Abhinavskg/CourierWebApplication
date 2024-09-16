@@ -1,0 +1,39 @@
+﻿@model IEnumerable<CourierWebApp.Models.Units>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Units</h1>
+
+<p>To create a new delivery, you need to create a unit beforehand.</p>
+
+<div class="d-flex mb-4">
+	<a class="btn btn-primary mr-3" asp-action="Create">Create a new unit</a>
+
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Unit)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Unit)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UnitId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UnitId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UnitId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

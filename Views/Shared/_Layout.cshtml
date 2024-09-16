@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - French Courier Management System</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                       
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark" href="#" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="About">About Project</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Intro">Introduction</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Vision">Mission & Vision</a>
+                                
+                                <!-- Add more dropdown items as needed -->
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="OurS">Our Services</a>
+                        </li>
+                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Deliveries" asp-action="Index">Deliveries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Deliveries" asp-action="ShowSearchForm">Search Delivery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Customers" asp-action="Index">Customers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Items" asp-action="Index">Items</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Units" asp-action="Index">Units</a>
+                            </li>
+                        }
+
+                       
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="ContectUs">Contect Us</a>
+                        </li>
+                    </ul>
+                    <partial name="_LoginPartial" />
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+  
+            <!-- Footer content -->
+            <footer class="bg-dark text-light py-5" style="background-color: blue;">
+                <div class="container">
+                    <div class="col-md-6">
+                        <h4>Other Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+                            <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                            <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="OurS">Our Service</a></li>
+                           
+                            <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a></li>
+                            <li><a class="text-light" asp-area="" asp-controller="Home" asp-action="ContectUs">Contect Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 content-details ">
+                            <h5>Contact Us</h5>
+                            <ul class="list-unstyled">
+                                <li>Email: abhinavskg0@gmail.com</li>
+                                <li>Phone: 9305429287 , <br />8765212146</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 col-text-right">
+
+                            <h5>Address</h5>
+                            <p><b>Abhinav Gupta</b></p>
+                            <p>French Courier Management System</p>
+                            <p>15/166 Gandhi Nagar,Poni Road Shukalaganj</p>
+                            <p>India, 209861</p>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <div class="social-icons">
+                        <h5>Social Accounts</h5>
+                        <a href ="https://www.facebook.com/abhinav2002"><img src="~/img/face.png" alt="Facebook" style="width: 40px; height: 40px; margin: 0 10px;" /></a>
+                        <a href="https://twitter.com/Abhinavgupta_29"><img src="~/img/x.png" alt="Twitter" style="width: 40px; height: 40px; margin: 0 10px;" /></a>
+                        <a href="https://www.instagram.com/abhinavgupta_29"><img src="~/img/insta.jpg" alt="Instagram" style="width: 40px; height: 40px; margin: 0 10px;" /></a>
+                        <a href="https://www.linkedin.com/in/abhinavskg1"><img src="~/img/link.png" alt="LinkedIn" style="width: 40px; height: 40px; margin: 0 10px;" /></a>
+                        <!-- Add more social media icons and links as needed -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12 text-center">
+                    <hr class="border-light">
+                    <p class="mb-0">&copy; @DateTime.Now.Year - French Courier Management System - <a class="text-light" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿/* Global Styles */
+
+.container {
+    margin-top: 50px;
+}
+
+/* Featurette Styles */
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.featurette-heading {
+    color: #333;
+}
+
+.featurette .lead {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.featurette-image {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #545b62;
+    }
+/* Modern and Attractive Button Styles */
+
+/* Default Button Styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.25rem;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Primary Button Styles */
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+}
+
+/* Secondary Button Styles */
+.btn-secondary {
+    color: #fff;
+    background-color: #6c757d;
+}
+
+/* Button Hover Styles */
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Button Focus Styles */
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Button Active Styles */
+.btn:active {
+    transform: translateY(1px);
+}
+
+/* Button Icons */
+.btn i {
+    margin-right: 0.5rem;
+}
+
+/* Center Button Text Vertically */
+.btn span {
+    vertical-align: middle;
+}
+
+.main-header {
+    font-size: 3rem; /* Adjust this value as needed */
+}
+
+
